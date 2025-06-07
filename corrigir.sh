@@ -49,5 +49,7 @@ else
   echo "Nenhum usuário duplicado encontrado (ignorando maiúsculas/minúsculas)."
 fi
 
-echo "Configuração atualizada. Reinicie o Xray com:"
-echo "  systemctl restart xray"
+echo "Reiniciando o serviço Xray..."
+systemctl restart xray
+
+echo "Configuração atualizada. Xray reiniciado."
